@@ -18,7 +18,7 @@ type State = {
 		media: string | undefined,
 	},
 	lastConditionalRule: Container | undefined,
-}
+};
 
 type Modification = {
 	isRec2020: boolean,
@@ -26,7 +26,7 @@ type Modification = {
 	modifiedValue: string,
 	hasFallback: boolean,
 	item: Declaration,
-}
+};
 
 const creator: PluginCreator<pluginOptions> = () => {
 
@@ -169,7 +169,6 @@ const creator: PluginCreator<pluginOptions> = () => {
 							const parentClone = parent.clone();
 							parentClone.removeAll();
 
-							// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 							parentClone.raws.before = '\n';
 
 							const clone = item.clone();
@@ -212,3 +211,4 @@ const creator: PluginCreator<pluginOptions> = () => {
 creator.postcss = true;
 
 export default creator;
+export { creator as 'module.exports' };

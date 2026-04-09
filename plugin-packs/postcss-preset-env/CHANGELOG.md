@@ -1,5 +1,95 @@
 # Changes to PostCSS Preset Env
 
+### 11.2.0
+
+_February 21, 2026_
+
+- Added `@csstools/postcss-font-width-property` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-font-width-property#readme) for usage details.
+- Updated [`cssdb`](https://github.com/csstools/cssdb) to [`8.8.0`](https://github.com/csstools/cssdb/blob/main/CHANGELOG.md#880-february-21-2026)
+
+### 11.1.3
+
+_February 6, 2026_
+
+- Updated [`@csstools/postcss-text-decoration-shorthand`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-text-decoration-shorthand) to [`5.0.2`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-text-decoration-shorthand/CHANGELOG.md#502) (patch)
+
+### 11.1.2
+
+_January 25, 2026_
+
+- Updated [`@csstools/postcss-normalize-display-values`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values) to [`5.0.1`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values/CHANGELOG.md#501) (patch)
+- Updated [`@csstools/color-helpers`](https://github.com/csstools/postcss-plugins/tree/main/packages/color-helpers) to [`6.0.1`](https://github.com/csstools/postcss-plugins/tree/main/packages/color-helpers/CHANGELOG.md#601) (patch)
+
+### 11.1.1
+
+_January 15, 2026_
+
+- Updated [`@csstools/postcss-alpha-function`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function) to [`2.0.1`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function/CHANGELOG.md#201) (patch)
+
+### 11.1.0
+
+_January 14, 2026_
+
+- Added `@csstools/postcss-mixins` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-mixins#readme) for usage details.
+- Updated [`cssdb`](https://github.com/csstools/cssdb) to [`8.7.0`](https://github.com/csstools/cssdb/blob/main/CHANGELOG.md#870-january-14-2026)
+
+### 11.0.1
+
+_January 14, 2026_
+
+- Updated [`css-blank-pseudo`](https://github.com/csstools/postcss-plugins/tree/main/plugins/css-blank-pseudo) to [`8.0.1`](https://github.com/csstools/postcss-plugins/tree/main/plugins/css-blank-pseudo/CHANGELOG.md#801) (patch)
+
+### 11.0.0
+
+_January 14, 2026_
+
+- Updated: Support for Node `20.19.0` or later (major).
+- Removed: `commonjs` API. In supported Node versions `require(esm)` will work without needing to make code changes.
+
+### 10.6.1
+
+_January 10, 2026_
+
+- Updated [`@csstools/postcss-normalize-display-values`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values) to [`4.0.1`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-normalize-display-values/CHANGELOG.md#401) (patch)
+
+### 10.6.0
+
+_December 27, 2025_
+
+- Added `@csstools/postcss-property-rule-prelude-list` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-property-rule-prelude-list#readme) for usage details.
+- Added `@csstools/postcss-syntax-descriptor-syntax-production` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-syntax-descriptor-syntax-production#readme) for usage details.
+- Updated [`cssdb`](https://github.com/csstools/cssdb) to [`8.6.0`](https://github.com/csstools/cssdb/blob/main/CHANGELOG.md#860-december-26-2025)
+
+### 10.5.0
+
+_December 4, 2025_
+
+- Added `@csstools/postcss-position-area-property` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-position-area-property#readme) for usage details.
+- Updated [`cssdb`](https://github.com/csstools/cssdb) to [`8.5.2`](https://github.com/csstools/cssdb/blob/main/CHANGELOG.md#852-december-4-2025) (patch)
+
+### 10.4.0
+
+_September 21, 2025_
+
+- Added `@csstools/postcss-contrast-color-function` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-contrast-color-function#readme) for usage details.
+- Updated [`@csstools/postcss-progressive-custom-properties`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-progressive-custom-properties) to [`4.2.1`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-progressive-custom-properties/CHANGELOG.md#421) (patch)
+
+### 10.3.1
+
+_August 27, 2025_
+
+- Updated [`css-has-pseudo`](https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo) to [`7.0.3`](https://github.com/csstools/postcss-plugins/tree/main/plugins/css-has-pseudo/CHANGELOG.md#703) (patch)
+
+### 10.3.0
+
+_August 22, 2025_
+
+- Added `@csstools/postcss-alpha-function` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-alpha-function#readme) for usage details.
+- Added `@csstools/postcss-color-function-display-p3-linear` [Check the plugin README](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function-display-p3-linear#readme) for usage details.
+- Updated [`@csstools/css-color-parser`](https://github.com/csstools/postcss-plugins/tree/main/packages/css-color-parser) to [`3.1.0`](https://github.com/csstools/postcss-plugins/tree/main/packages/css-color-parser/CHANGELOG.md#310) (minor)
+- Updated [`@csstools/postcss-color-function`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function) to [`4.0.11`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-function/CHANGELOG.md#4011) (patch)
+- Updated [`@csstools/postcss-color-mix-function`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function) to [`3.0.11`](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-color-mix-function/CHANGELOG.md#3011) (patch)
+
 ### 10.2.4
 
 _June 26, 2025_

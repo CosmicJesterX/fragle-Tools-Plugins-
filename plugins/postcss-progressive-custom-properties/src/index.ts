@@ -13,7 +13,7 @@ type State = {
 		support: string | undefined,
 	},
 	lastConditionalRule: Container | undefined,
-}
+};
 
 const creator: PluginCreator<null> = () => {
 	return {
@@ -120,7 +120,6 @@ const creator: PluginCreator<null> = () => {
 						const parentClone = decl.parent.clone();
 						parentClone.removeAll();
 
-						// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 						parentClone.raws.before = '\n';
 
 						parentClone.append(decl.clone());
@@ -158,3 +157,4 @@ const creator: PluginCreator<null> = () => {
 creator.postcss = true;
 
 export default creator;
+export { creator as 'module.exports' };

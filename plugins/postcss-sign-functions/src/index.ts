@@ -35,7 +35,7 @@ const creator: PluginCreator<pluginOptions> = (opts?: pluginOptions) => {
 				componentValues = replaceComponentValues(
 					parseCommaSeparatedListOfComponentValues(tokenize({ css: decl.value })),
 					replacer,
-				)
+				);
 			} else {
 				componentValues = parseCommaSeparatedListOfComponentValues(tokenize({ css: decl.value }));
 			}
@@ -110,3 +110,4 @@ function replacer(componentValue: ComponentValue): Array<ComponentValue> | void 
 creator.postcss = true;
 
 export default creator;
+export { creator as 'module.exports' };

@@ -115,27 +115,13 @@
 	},
 	"font-feature-values": {
 		"descriptors": {
-			"@annotation": {
-				"syntax": "@annotation { <declaration-list> }"
-			},
-			"@character-variant": {
-				"syntax": "@character-variant { <declaration-list> }"
-			},
-			"@historical-forms": {
-				"syntax": "@historical-forms { <declaration-list> }"
-			},
-			"@ornaments": {
-				"syntax": "@ornaments { <declaration-list> }"
-			},
-			"@styleset": {
-				"syntax": "@styleset { <declaration-list> }"
-			},
-			"@stylistic": {
-				"syntax": "@stylistic { <declaration-list> }"
-			},
-			"@swash": {
-				"syntax": "@swash { <declaration-list> }"
-			},
+			"font-display": {
+				"syntax": "auto | block | swap | fallback | optional"
+			}
+		}
+	},
+	"font-features-values": {
+		"descriptors": {
 			"font-display": {
 				"syntax": "auto | block | swap | fallback | optional"
 			}
@@ -168,6 +154,9 @@
 			},
 			"marks": {
 				"syntax": "none | [ crop || cross ]"
+			},
+			"page-margin-safety": {
+				"syntax": "none | clamp | add"
 			},
 			"page-orientation": {
 				"syntax": "upright | rotate-left | rotate-right"

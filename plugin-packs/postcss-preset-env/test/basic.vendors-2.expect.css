@@ -126,7 +126,7 @@
 }
 
 .test-system-ui-font-family {
-	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+	font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
 	order: 18;
 }
 
@@ -182,8 +182,7 @@
 	font-stretch: normal;
 	line-height: normal;
 	height: auto;
-	-webkit-hyphens: none;
-	        hyphens: none;
+	hyphens: none;
 	left: auto;
 	letter-spacing: normal;
 	list-style: disc outside none;
@@ -403,26 +402,6 @@
 	display: inline table;
 }
 
-.table-cell-flow {
-	display: table-cell;
-	display: table-cell flow;
-}
-
-.table-caption-flow {
-	display: table-caption;
-	display: table-caption flow;
-}
-
-.ruby-base-flow {
-	display: ruby-base;
-	display: ruby-base flow;
-}
-
-.ruby-text-flow {
-	display: ruby-text;
-	display: ruby-text flow;
-}
-
 .logical-float {
 	float: left;
 }
@@ -433,6 +412,7 @@
 	prop-3: rgb(7, 3, 1);
 	prop-4: rgb(7, 3, 1);
 	prop-5: color(display-p3 1 1 1 1);
+	prop-6: rgb(89, 89, 89);
 }
 
 .oklab {
@@ -476,6 +456,11 @@
 	color-15: rgb(188, 101, 59);
 	color-16: rgb(188, 101, 59);
 	color-17: oklch(60% 0.1250 0.785398unknown);
+}
+
+.alpha {
+	color-1: alpha(from rgba(188, 101, 59, 0.2) / calc(alpha + 0.1));
+	--color-2: alpha(from rgba(188, 101, 59, 0.2) / calc(alpha + 0.1));
 }
 
 .ic-unit {
@@ -741,4 +726,47 @@
 		random(--c, 30%, 70%, 5%)
 		random(--h, 0deg, 360deg, 12deg)
 	);
+}
+
+.contrast-color {
+	color: rgb(255, 255, 255);
+	color: contrast-color(green);
+}
+
+.position-area {
+	inset-area: start;
+	position-area: start;
+}
+
+@property --color-a, --color-b {
+	inherits: true;
+	initial-value: black;
+	syntax: <color>;
+}
+
+@mixin --mixin-a() {
+	color: lime;
+
+	@media screen {
+		color: green;
+	}
+}
+
+.apply {
+	width: 10px;
+
+	@apply --mixin-a;
+
+	height: 20px;
+}
+
+@font-face {
+	src: url("foo.ttf");
+	font-family: "foo";
+	font-style: normal;
+	font-width: 1% 1000%;
+}
+
+.foo {
+	font-width: 50%;
 }

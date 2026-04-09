@@ -71,6 +71,12 @@
       - plugins/css-prefers-color-scheme/**
       - experimental/css-prefers-color-scheme/**
 
+"plugins/postcss-alpha-function":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-alpha-function/**
+      - experimental/postcss-alpha-function/**
+
 "plugins/postcss-attribute-case-insensitive":
   - changed-files:
     - any-glob-to-any-file:
@@ -94,6 +100,12 @@
     - any-glob-to-any-file:
       - plugins/postcss-color-function/**
       - experimental/postcss-color-function/**
+
+"plugins/postcss-color-function-display-p3-linear":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-color-function-display-p3-linear/**
+      - experimental/postcss-color-function-display-p3-linear/**
 
 "plugins/postcss-color-functional-notation":
   - changed-files:
@@ -221,6 +233,12 @@
       - plugins/postcss-font-format-keywords/**
       - experimental/postcss-font-format-keywords/**
 
+"plugins/postcss-font-width-property":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-font-width-property/**
+      - experimental/postcss-font-width-property/**
+
 "plugins/postcss-gamut-mapping":
   - changed-files:
     - any-glob-to-any-file:
@@ -341,6 +359,12 @@
       - plugins/postcss-minify/**
       - experimental/postcss-minify/**
 
+"plugins/postcss-mixins":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-mixins/**
+      - experimental/postcss-mixins/**
+
 "plugins/postcss-nested-calc":
   - changed-files:
     - any-glob-to-any-file:
@@ -383,11 +407,23 @@
       - plugins/postcss-place/**
       - experimental/postcss-place/**
 
+"plugins/postcss-position-area-property":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-position-area-property/**
+      - experimental/postcss-position-area-property/**
+
 "plugins/postcss-progressive-custom-properties":
   - changed-files:
     - any-glob-to-any-file:
       - plugins/postcss-progressive-custom-properties/**
       - experimental/postcss-progressive-custom-properties/**
+
+"plugins/postcss-property-rule-prelude-list":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-property-rule-prelude-list/**
+      - experimental/postcss-property-rule-prelude-list/**
 
 "plugins/postcss-pseudo-class-any-link":
   - changed-files:
@@ -460,6 +496,12 @@
     - any-glob-to-any-file:
       - plugins/postcss-stepped-value-functions/**
       - experimental/postcss-stepped-value-functions/**
+
+"plugins/syntax-descriptor-syntax-production":
+  - changed-files:
+    - any-glob-to-any-file:
+      - plugins/postcss-syntax-descriptor-syntax-production/**
+      - experimental/postcss-syntax-descriptor-syntax-production/**
 
 "plugins/postcss-text-decoration-shorthand":
   - changed-files:

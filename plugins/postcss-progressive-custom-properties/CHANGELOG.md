@@ -1,5 +1,27 @@
 # Changes to PostCSS Progressive Custom Properties
 
+### 5.0.0
+
+_January 14, 2026_
+
+- Updated: Support for Node `20.19.0` or later (major).
+- Removed: `commonjs` API. In supported Node versions `require(esm)` will work without needing to make code changes.
+
+### 4.2.1
+
+_September 21, 2025_
+
+- Remove redundant match for `contrast-color( <color> )`;
+
+### 4.2.0
+
+_August 22, 2025_
+
+- Add support for `color(display-p3-linear 0.3081 0.014 0.0567)`
+- Add support for `color-mix(in display-p3-linear, red, blue)`
+- Add support for `color-mix(red, blue)`
+- Add support for `alpha(from red / 0.5)`
+
 ### 4.1.0
 
 _May 27, 2025_

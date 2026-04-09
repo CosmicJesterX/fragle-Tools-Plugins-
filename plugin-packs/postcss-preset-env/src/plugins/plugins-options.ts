@@ -1,4 +1,5 @@
 import type { pluginOptions as postcssInitialOptions } from '@csstools/postcss-initial';
+import type { pluginOptions as postcssAlphaFunctionOptions } from '@csstools/postcss-alpha-function';
 import type { pluginOptions as postcssPseudoClassAnyLinkOptions } from 'postcss-pseudo-class-any-link';
 import type { pluginOptions as postcssBlankPseudoOptions } from 'css-blank-pseudo';
 import type { postcssPageBreakOptions } from '../types/postcss-page-break/plugin-options';
@@ -6,10 +7,12 @@ import type { pluginOptions as postcssCascadeLayersOptions } from '@csstools/pos
 import type { pluginOptions as postcssAttributeCaseInsensitiveOptions } from 'postcss-attribute-case-insensitive';
 import type { postcssClampOptions } from '../types/postcss-clamp/plugin-options';
 import type { pluginOptions as postcssColorFunctionOptions } from '@csstools/postcss-color-function';
+import type { pluginOptions as postcssColorFunctionDisplayP3LinearOptions } from '@csstools/postcss-color-function-display-p3-linear';
 import type { pluginOptions as postcssColorFunctionalNotationOptions } from 'postcss-color-functional-notation';
 import type { pluginOptions as postcssColorMixFunctionOptions } from '@csstools/postcss-color-mix-function';
 import type { pluginOptions as postcssColorMixVariadicFunctionArgumentsOptions } from '@csstools/postcss-color-mix-variadic-function-arguments';
 import type { pluginOptions as postcssContentAltTextOptions } from '@csstools/postcss-content-alt-text';
+import type { pluginOptions as postcssContrastColorFunctionOptions } from '@csstools/postcss-contrast-color-function';
 import type { pluginOptions as postcssCustomMediaOptions } from 'postcss-custom-media';
 import type { pluginOptions as postcssCustomPropertiesOptions } from 'postcss-custom-properties';
 import type { pluginOptions as postcssCustomSelectorsOptions } from 'postcss-custom-selectors';
@@ -22,6 +25,7 @@ import type { pluginOptions as postcssFocusVisibleOptions } from 'postcss-focus-
 import type { pluginOptions as postcssFocusWithinOptions } from 'postcss-focus-within';
 import type { pluginOptions as postcssFontFormatKeywordsOptions } from '@csstools/postcss-font-format-keywords';
 import type { postcssFontVariantOptions } from '../types/postcss-font-variant/plugin-options';
+import type { pluginOptions as postcssFontWidthPropertyOptions } from '@csstools/postcss-font-width-property';
 import type { pluginOptions as postcssGamutMappingOptions } from '@csstools/postcss-gamut-mapping';
 import type { pluginOptions as postcssGapPropertiesOptions } from 'postcss-gap-properties';
 import type { pluginOptions as postcssGradientsInterpolationMethodOptions } from '@csstools/postcss-gradients-interpolation-method';
@@ -40,6 +44,7 @@ import type { pluginOptions as postcssLogicalResizeOptions } from '@csstools/pos
 import type { pluginOptions as postcssLogicalViewportUnitsOptions } from '@csstools/postcss-logical-viewport-units';
 import type { pluginOptions as postcssMediaQueriesAspectRatioNumberValuesOptions } from '@csstools/postcss-media-queries-aspect-ratio-number-values';
 import type { pluginOptions as postcssMediaMinmaxOptions } from '@csstools/postcss-media-minmax';
+import type { pluginOptions as postcssMixinsOptions } from '@csstools/postcss-mixins';
 import type { pluginOptions as postcssNestedCalcOptions } from '@csstools/postcss-nested-calc';
 import type { pluginOptions as postcssNestingOptions } from 'postcss-nesting';
 import type { pluginOptions as postcssSelectorNotOptions } from 'postcss-selector-not';
@@ -48,14 +53,17 @@ import type { postcssOpacityPercentageOptions } from '../types/postcss-opacity-p
 import type { pluginOptions as postcssOverflowShorthandOptions } from 'postcss-overflow-shorthand';
 import type { postcssReplaceOverflowWrapOptions } from '../types/postcss-replace-overflow-wrap/plugin-options';
 import type { pluginOptions as postcssPlaceOptions } from 'postcss-place';
+import type { pluginOptions as postcssPositionAreaPropertyOptions } from '@csstools/postcss-position-area-property';
 import type { pluginOptions as postcssPrefersColorSchemeOptions } from 'css-prefers-color-scheme';
+import type { pluginOptions as postcssPropertyRulePreludeListOptions } from '@csstools/postcss-property-rule-prelude-list';
 import type { pluginOptions as postcssRandomFunctionOptions } from '@csstools/postcss-random-function';
 import type { pluginOptions as postcssColorRebeccapurpleOptions } from 'postcss-color-rebeccapurple';
 import type { pluginOptions as postcssRelativeColorSyntaxOptions } from '@csstools/postcss-relative-color-syntax';
 import type { pluginOptions as postcssScopePseudoClassOptions } from '@csstools/postcss-scope-pseudo-class';
 import type { pluginOptions as postcssSignFunctionsOptions } from '@csstools/postcss-sign-functions';
 import type { pluginOptions as postcssSteppedValueFunctionsOptions } from '@csstools/postcss-stepped-value-functions';
-import type { postcssFontFamilySystemUIOptions } from '../types/postcss-system-ui-font-family/plugin-options';
+import type { pluginOptions as postcssSyntaxDescriptorSyntaxProductionOptions } from '@csstools/postcss-syntax-descriptor-syntax-production';
+import type { pluginOptions as postcssSystemUIFontFamilyOptions } from '@csstools/postcss-system-ui-font-family';
 import type { pluginOptions as postcssTextDecorationShorthandOptions } from '@csstools/postcss-text-decoration-shorthand';
 import type { pluginOptions as postcssTrigonometricFunctionsOptions } from '@csstools/postcss-trigonometric-functions';
 import type { pluginOptions as postcssUnsetValueOptions } from '@csstools/postcss-unset-value';
@@ -65,6 +73,8 @@ export type subPluginOptions<T> = ['auto' | boolean, T] | T | boolean;
 export type pluginsOptions = {
 	/** plugin options for "@csstools/postcss-initial" */
 	'all-property'?: subPluginOptions<postcssInitialOptions>
+	/** plugin options for "@csstools/postcss-alpha-function" */
+	'alpha-function'?: subPluginOptions<postcssAlphaFunctionOptions>
 	/** plugin options for "postcss-pseudo-class-any-link" */
 	'any-link-pseudo-class'?: subPluginOptions<postcssPseudoClassAnyLinkOptions>
 	/** plugin options for "css-blank-pseudo" */
@@ -79,6 +89,8 @@ export type pluginsOptions = {
 	'clamp'?: subPluginOptions<postcssClampOptions>
 	/** plugin options for "@csstools/postcss-color-function" */
 	'color-function'?: subPluginOptions<postcssColorFunctionOptions>
+	/** plugin options for "@csstools/postcss-color-function-display-p3-linear" */
+	'color-function-display-p3-linear'?: subPluginOptions<postcssColorFunctionDisplayP3LinearOptions>
 	/** plugin options for "postcss-color-functional-notation" */
 	'color-functional-notation'?: subPluginOptions<postcssColorFunctionalNotationOptions>
 	/** plugin options for "@csstools/postcss-color-mix-function" */
@@ -87,6 +99,8 @@ export type pluginsOptions = {
 	'color-mix-variadic-function-arguments'?: subPluginOptions<postcssColorMixVariadicFunctionArgumentsOptions>
 	/** plugin options for "@csstools/postcss-content-alt-text" */
 	'content-alt-text'?: subPluginOptions<postcssContentAltTextOptions>
+	/** plugin options for "@csstools/postcss-contrast-color-function" */
+	'contrast-color-function'?: subPluginOptions<postcssContrastColorFunctionOptions>
 	/** plugin options for "postcss-custom-media" */
 	'custom-media-queries'?: subPluginOptions<postcssCustomMediaOptions>
 	/** plugin options for "postcss-custom-properties" */
@@ -111,6 +125,8 @@ export type pluginsOptions = {
 	'font-format-keywords'?: subPluginOptions<postcssFontFormatKeywordsOptions>
 	/** plugin options for "postcss-font-variant" */
 	'font-variant-property'?: subPluginOptions<postcssFontVariantOptions>
+	/** plugin options for "@csstools/postcss-font-width-property" */
+	'font-width-property'?: subPluginOptions<postcssFontWidthPropertyOptions>
 	/** plugin options for "@csstools/postcss-gamut-mapping" */
 	'gamut-mapping'?: subPluginOptions<postcssGamutMappingOptions>
 	/** plugin options for "postcss-gap-properties" */
@@ -147,6 +163,8 @@ export type pluginsOptions = {
 	'media-queries-aspect-ratio-number-values'?: subPluginOptions<postcssMediaQueriesAspectRatioNumberValuesOptions>
 	/** plugin options for "@csstools/postcss-media-minmax" */
 	'media-query-ranges'?: subPluginOptions<postcssMediaMinmaxOptions>
+	/** plugin options for "@csstools/postcss-mixins" */
+	'mixins'?: subPluginOptions<postcssMixinsOptions>
 	/** plugin options for "@csstools/postcss-nested-calc" */
 	'nested-calc'?: subPluginOptions<postcssNestedCalcOptions>
 	/** plugin options for "postcss-nesting" */
@@ -163,8 +181,12 @@ export type pluginsOptions = {
 	'overflow-wrap-property'?: subPluginOptions<postcssReplaceOverflowWrapOptions>
 	/** plugin options for "postcss-place" */
 	'place-properties'?: subPluginOptions<postcssPlaceOptions>
+	/** plugin options for "@csstools/postcss-position-area-property" */
+	'position-area-property'?: subPluginOptions<postcssPositionAreaPropertyOptions>
 	/** plugin options for "css-prefers-color-scheme" */
 	'prefers-color-scheme-query'?: subPluginOptions<postcssPrefersColorSchemeOptions>
+	/** plugin options for "@csstools/postcss-property-rule-prelude-list" */
+	'property-rule-prelude-list'?: subPluginOptions<postcssPropertyRulePreludeListOptions>
 	/** plugin options for "@csstools/postcss-random-function" */
 	'random-function'?: subPluginOptions<postcssRandomFunctionOptions>
 	/** plugin options for "postcss-color-rebeccapurple" */
@@ -177,8 +199,10 @@ export type pluginsOptions = {
 	'sign-functions'?: subPluginOptions<postcssSignFunctionsOptions>
 	/** plugin options for "@csstools/postcss-stepped-value-functions" */
 	'stepped-value-functions'?: subPluginOptions<postcssSteppedValueFunctionsOptions>
-	/** plugin options for "postcss-system-ui-font-family" */
-	'system-ui-font-family'?: subPluginOptions<postcssFontFamilySystemUIOptions>
+	/** plugin options for "@csstools/postcss-syntax-descriptor-syntax-production" */
+	'syntax-descriptor-syntax-production'?: subPluginOptions<postcssSyntaxDescriptorSyntaxProductionOptions>
+	/** plugin options for "@csstools/postcss-system-ui-font-family" */
+	'system-ui-font-family'?: subPluginOptions<postcssSystemUIFontFamilyOptions>
 	/** plugin options for "@csstools/postcss-text-decoration-shorthand" */
 	'text-decoration-shorthand'?: subPluginOptions<postcssTextDecorationShorthandOptions>
 	/** plugin options for "@csstools/postcss-trigonometric-functions" */

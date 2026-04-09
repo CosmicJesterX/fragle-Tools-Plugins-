@@ -120,7 +120,7 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 }
 
 .test-system-ui-font-family {
-	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+	font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
 	order: 18;
 }
 
@@ -176,8 +176,7 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 	font-stretch: normal;
 	line-height: normal;
 	height: auto;
-	-webkit-hyphens: none;
-	        hyphens: none;
+	hyphens: none;
 	left: auto;
 	letter-spacing: normal;
 	list-style: disc outside none;
@@ -397,26 +396,6 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 	display: inline table;
 }
 
-.table-cell-flow {
-	display: table-cell;
-	display: table-cell flow;
-}
-
-.table-caption-flow {
-	display: table-caption;
-	display: table-caption flow;
-}
-
-.ruby-base-flow {
-	display: ruby-base;
-	display: ruby-base flow;
-}
-
-.ruby-text-flow {
-	display: ruby-text;
-	display: ruby-text flow;
-}
-
 .logical-float {
 	float: left;
 }
@@ -427,6 +406,7 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 	prop-3: rgb(7, 3, 1);
 	prop-4: rgb(7, 3, 1);
 	prop-5: color(display-p3 1 1 1 1);
+	prop-6: rgb(89, 89, 89);
 }
 
 .oklab {
@@ -475,6 +455,11 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 	color-10: color(display-p3 0.19244 0.58461 0.51559);
 	color-11: color(display-p3 0.19244 0.58461 0.51559);
 }
+}
+
+.alpha {
+	color-1: rgba(188, 101, 59, 0.3);
+	--color-2: rgba(188, 101, 59, 0.3);
 }
 
 .ic-unit {
@@ -754,17 +739,67 @@ h1.test-custom-selectors:not(.does-not-exist), h2.test-custom-selectors:not(.doe
 
 .random {
 	color: rgb(
-		240,
-		100,
-		235
+		45,
+		110,
+		100
 	);
 
-	border-color: rgb(49, 29, 0);
+	border-color: rgb(63, 61, 0);
 }
 
 @media (color-gamut: p3) {
 .random {
 
-	border-color: color(display-p3 0.18785 0.11205 0);
+	border-color: color(display-p3 0.2472 0.23964 0);
 }
+}
+
+.contrast-color {
+	color: rgb(255, 255, 255);
+	color: contrast-color(green);
+}
+
+.position-area {
+	inset-area: start;
+	position-area: start;
+}
+
+@property --color-a {
+	inherits: true;
+	initial-value: black;
+	syntax: "<color>";
+}
+
+@property --color-b {
+	inherits: true;
+	initial-value: black;
+	syntax: "<color>";
+}
+
+.apply {
+	width: 10px;
+	color: lime;
+}
+
+@media screen {
+
+.apply {
+		color: green;
+}
+	}
+
+.apply {
+
+	height: 20px;
+}
+
+@font-face {
+	src: url("foo.ttf");
+	font-family: "foo";
+	font-style: normal;
+	font-stretch: 1% 1000%;
+}
+
+.foo {
+	font-stretch: 50%;
 }

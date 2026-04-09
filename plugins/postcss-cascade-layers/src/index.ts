@@ -47,10 +47,7 @@ const creator: PluginCreator<pluginOptions> = (opts?: pluginOptions) => {
 
 					if (IS_LAYER_REGEX.test(node.name)) {
 						hasAnyLayer = true;
-						return;
 					}
-
-					return;
 				}
 			});
 
@@ -183,3 +180,4 @@ const creator: PluginCreator<pluginOptions> = (opts?: pluginOptions) => {
 creator.postcss = true;
 
 export default creator;
+export { creator as 'module.exports' };
