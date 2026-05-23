@@ -87,12 +87,12 @@
 		"@csstools/postcss-text-decoration-shorthand": "^5.0.3",
 		"@csstools/postcss-trigonometric-functions": "^5.0.1",
 		"@csstools/postcss-unset-value": "^5.0.0",
-		"autoprefixer": "^10.4.24",
+		"autoprefixer": "^10.5.0",
 		"browserslist": "^4.28.1",
 		"css-blank-pseudo": "^8.0.1",
 		"css-has-pseudo": "^8.0.0",
 		"css-prefers-color-scheme": "^11.0.0",
-		"cssdb": "^8.8.0",
+		"cssdb": "^8.9.0",
 		"postcss-attribute-case-insensitive": "^8.0.0",
 		"postcss-clamp": "^4.1.0",
 		"postcss-color-functional-notation": "^8.0.2",
@@ -120,7 +120,7 @@
 		"postcss-selector-not": "^9.0.0"
 	},
 	"peerDependencies": {
-		"postcss": "^8.4"
+		"postcss": "^8.5.14"
 	},
 	"devDependencies": {
 		"@csstools/pack-test": "*",
